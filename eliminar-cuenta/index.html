@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eliminar cuenta — Turnea</title>
+  <meta name="description" content="Solicita la eliminación de tu cuenta de Turnea y de tus datos personales sin necesidad de instalar la app ni iniciar sesión.">
+  <link rel="canonical" href="https://molanojd.github.io/turnea/eliminar-cuenta/">
+  <meta name="theme-color" content="#172F4D">
+  <link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+  <meta property="og:title" content="Eliminar cuenta — Turnea">
+  <meta property="og:image" content="https://molanojd.github.io/turnea/assets/og.jpg">
+  <link rel="preload" href="../assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="../"><img src="../assets/logo.svg" width="34" height="34" alt="">Turnea</a>
+    <nav class="nav" aria-label="Principal">
+      <a href="../#como-funciona">Cómo funciona</a>
+      <a href="../#preguntas">Preguntas</a>
+      <a href="../privacidad/">Privacidad</a>
+    </nav>
+    <a class="btn btn-outline" href="../">Volver al inicio</a>
+  </div>
+</header>
+
+<main id="main">
+  <div class="legal-hero">
+    <div class="wrap">
+      <h1>Eliminar tu cuenta de Turnea</h1>
+      <p>Puedes pedir que eliminemos tu cuenta y tus datos personales en cualquier momento. No necesitas instalar la app ni iniciar sesión.</p>
+    </div>
+  </div>
+
+  <section class="legal">
+    <div class="wrap">
+      <article class="doc">
+        <h2>Cómo hacer la solicitud</h2>
+        <ol>
+          <li>Completa el formulario de abajo. Se abrirá tu aplicación de correo con el mensaje ya escrito.</li>
+          <li>Envía el correo <strong>desde la dirección asociada a tu cuenta</strong>, para que podamos confirmar que eres el titular.</li>
+          <li>Te responderemos por correo para confirmar que recibimos la solicitud y te avisaremos cuando la eliminación se haya completado.</li>
+        </ol>
+
+        <form class="form" id="del-form" novalidate>
+          <div class="field">
+            <label for="f-name">Nombre completo</label>
+            <input id="f-name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="f-email">Correo asociado a tu cuenta de Turnea</label>
+            <input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" required>
+            <p class="hint">Es el correo con el que te registraste en la app.</p>
+          </div>
+          <div class="field">
+            <label for="f-type">Tipo de cuenta</label>
+            <select id="f-type" name="type">
+              <option>Trabajador</option>
+              <option>Empresa</option>
+            </select>
+          </div>
+          <fieldset class="field" style="border:0;padding:0;margin:0">
+            <legend style="font-weight:600;color:var(--navy);margin-bottom:6px;font-size:.95rem">¿Qué quieres eliminar?</legend>
+            <div class="radios">
+              <label><input type="radio" name="scope" value="Toda mi cuenta y todos mis datos" checked> <span><strong>Toda mi cuenta</strong> y todos los datos asociados</span></label>
+              <label><input type="radio" name="scope" value="Solo algunos datos (detallados abajo)"> <span><strong>Solo algunos datos</strong>, sin eliminar la cuenta (por ejemplo, documentos o fotos)</span></label>
+            </div>
+          </fieldset>
+          <div class="field">
+            <label for="f-notes">Detalles (opcional)</label>
+            <textarea id="f-notes" name="notes" rows="3"></textarea>
+          </div>
+          <div>
+            <button class="btn btn-purple" type="submit">Enviar solicitud por correo</button>
+          </div>
+          <p class="fallback" id="f-msg" role="status"></p>
+        </form>
+        <p class="fallback">¿No se abre tu correo? Escríbenos directamente a <a href="mailto:appturnea@gmail.com?subject=Solicitud%20de%20eliminaci%C3%B3n%20de%20cuenta">appturnea@gmail.com</a> con el asunto «Solicitud de eliminación de cuenta», tu nombre, el correo de tu cuenta y el tipo de cuenta (trabajador o empresa).</p>
+
+        <h2>Qué datos se eliminan</h2>
+        <p>Al eliminar tu cuenta borramos los datos personales asociados a ella, entre ellos:</p>
+        <ul>
+          <li>Los datos de tu cuenta y tu perfil: nombre, correo y datos profesionales.</li>
+          <li>Tu experiencia, habilidades, disponibilidad y postulaciones.</li>
+          <li>Si eres empresa: la información de la organización, de sus representantes y de sus sedes, y las oportunidades publicadas.</li>
+          <li>Las fotos, logos y documentos que hayas cargado.</li>
+          <li>Tus mensajes y notificaciones.</li>
+        </ul>
+        <div class="callout p">Desactivar la cuenta o dejar de usar la app no equivale a eliminarla. Cuando lo solicitas, borramos tus datos.</div>
+
+        <h2>Qué información podríamos conservar</h2>
+        <p>Solo conservaremos la información que una ley nos obligue a guardar, durante el tiempo que esa obligación lo exija. Pasado ese plazo, también la eliminaremos.</p>
+
+        <h2>Más información</h2>
+        <p>Consulta nuestra <a href="../privacidad/">política de privacidad</a> para saber cómo tratamos tus datos. Si tienes dudas, escríbenos a <a href="mailto:appturnea@gmail.com">appturnea@gmail.com</a> o a <a href="mailto:cristianiles14@gmail.com">cristianiles14@gmail.com</a>.</p>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Turnea</span>
+    <nav aria-label="Legal">
+      <a href="../">Inicio</a>
+      <a href="../privacidad/">Política de privacidad</a>
+      <a href="./">Eliminar cuenta</a>
+    </nav>
+  </div>
+</footer>
+<script>
+(function () {
+  var form = document.getElementById('del-form');
+  var msg = document.getElementById('f-msg');
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var name = document.getElementById('f-name').value.trim();
+    var email = document.getElementById('f-email').value.trim();
+    if (!name || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      msg.textContent = 'Escribe tu nombre y un correo válido para continuar.';
+      document.getElementById(name ? 'f-email' : 'f-name').focus();
+      return;
+    }
+    var scope = form.querySelector('input[name="scope"]:checked').value;
+    var body = [
+      'Hola, equipo de Turnea:',
+      '',
+      'Solicito la eliminación de datos de mi cuenta.',
+      '',
+      'Nombre: ' + name,
+      'Correo de la cuenta: ' + email,
+      'Tipo de cuenta: ' + document.getElementById('f-type').value,
+      'Qué quiero eliminar: ' + scope,
+      document.getElementById('f-notes').value.trim() ? 'Detalles: ' + document.getElementById('f-notes').value.trim() : '',
+      '',
+      'Gracias.'
+    ].join('\n');
+    location.href = 'mailto:appturnea@gmail.com?subject=' + encodeURIComponent('Solicitud de eliminación de cuenta') + '&body=' + encodeURIComponent(body);
+    msg.textContent = 'Abrimos tu aplicación de correo. Revisa el mensaje y envíalo desde el correo de tu cuenta.';
+  });
+})();
+</script>
+</body>
+</html>
