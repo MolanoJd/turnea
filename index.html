@@ -37,6 +37,9 @@
     <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></symbol>
     <symbol id="i-trash" viewBox="0 0 24 24"><path d="M3 6h18M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M10 11v6M14 11v6"/></symbol>
     <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
     <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
     <symbol id="i-play" viewBox="0 0 24 24"><path d="M5 3.5v17a1 1 0 0 0 1.5.86l14.5-8.5a1 1 0 0 0 0-1.72L6.5 2.64A1 1 0 0 0 5 3.5z" fill="currentColor" stroke="none"/></symbol>
   </defs>
@@ -48,15 +51,25 @@
   <div class="wrap">
     <a class="brand" href="./"><img src="assets/logo.svg" width="34" height="34" alt="">Turnea</a>
     <nav class="nav" aria-label="Principal">
-      <a href="#como-funciona">Cómo funciona</a>
       <a href="#trabajadores">Trabajadores</a>
       <a href="#empresas">Empresas</a>
       <a href="#preguntas">Preguntas</a>
       <a href="privacidad/">Privacidad</a>
       <a href="eliminar-cuenta/">Eliminar cuenta</a>
-      <a href="#contacto">Contacto</a>
     </nav>
-    <a class="btn btn-primary" href="#descargar">Descargar</a>
+    <a class="btn btn-primary top-cta" href="#contacto">Contacto</a>
+    <details class="mnav">
+      <summary aria-label="Abrir menú"><svg class="icon i-open" aria-hidden="true"><use href="#i-menu"/></svg><svg class="icon i-close" aria-hidden="true"><use href="#i-x"/></svg></summary>
+      <nav aria-label="Menú móvil">
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#trabajadores">Para trabajadores</a>
+        <a href="#empresas">Para empresas</a>
+        <a href="#preguntas">Preguntas frecuentes</a>
+        <a href="privacidad/">Política de privacidad</a>
+        <a href="eliminar-cuenta/">Eliminar cuenta</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </details>
   </div>
 </header>
 
@@ -68,23 +81,34 @@
         <span class="eyebrow">Trabajo por turnos y más</span>
         <h1 id="t-hero">Encuentra oportunidades. <span>Organiza tus turnos.</span></h1>
         <p class="lead">Turnea conecta a trabajadores y empresas para facilitar la búsqueda, publicación y gestión de oportunidades laborales. Crea tu perfil, revisa ofertas disponibles y mantén la comunicación desde un solo lugar.</p>
+        <div class="audience" role="group" aria-label="¿Qué buscas?">
+          <a class="aud worker" href="#trabajadores">
+            <span class="aud-ico"><svg class="icon" aria-hidden="true"><use href="#i-user"/></svg></span>
+            <span><b>Busco trabajo</b><small>Crea tu perfil y postúlate</small></span>
+            <svg class="icon aud-arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </a>
+          <a class="aud company" href="#empresas">
+            <span class="aud-ico"><svg class="icon" aria-hidden="true"><use href="#i-building"/></svg></span>
+            <span><b>Necesito personal</b><small>Publica oportunidades</small></span>
+            <svg class="icon aud-arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </a>
+        </div>
         <div class="cta" id="descargar">
-          <a class="play-soon" href="#contacto" aria-label="Próximamente en Google Play. Escríbenos para recibir el aviso.">
+          <a class="play-soon" href="#avisame">
             <svg class="icon" aria-hidden="true"><use href="#i-play"/></svg>
             <span><small>Próximamente en</small><strong>Google Play</strong></span>
           </a>
-          <a class="btn btn-outline" href="#como-funciona">Conoce cómo funciona</a>
+          <p class="note-soon">La app estará disponible muy pronto para Android.</p>
         </div>
-        <p class="note-soon">La app estará disponible muy pronto para Android.</p>
       </div>
 
       <div class="mock" aria-hidden="true">
         <div class="phone">
           <div class="screen">
             <div class="s-top">
-              <small>Hola 👋</small>
+              <small>Hola, bienvenido</small>
               <b>Oportunidades para ti</b>
-              <div class="s-search">⌕&nbsp; Buscar por cargo o ubicación</div>
+              <div class="s-search"><svg class="icon" aria-hidden="true"><use href="#i-search"/></svg>Buscar por cargo o ubicación</div>
             </div>
             <div class="s-chips"><span class="on">Por horas</span><span>Por días</span><span>Por proyecto</span><span>Permanente</span></div>
             <div class="s-card">
@@ -189,6 +213,17 @@
     </div>
   </section>
 
+  <!-- Aviso de lanzamiento -->
+  <section class="launch" id="avisame" aria-labelledby="t-launch">
+    <div class="wrap">
+      <div>
+        <h2 id="t-launch">Turnea llega pronto a Google Play</h2>
+        <p>Escríbenos y te avisamos apenas puedas descargarla, seas trabajador o empresa.</p>
+      </div>
+      <a class="btn btn-white" href="mailto:appturnea@gmail.com?subject=Quiero%20saber%20cu%C3%A1ndo%20sale%20Turnea"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>Avísame cuando salga</a>
+    </div>
+  </section>
+
   <!-- FAQ -->
   <section class="alt" id="preguntas" aria-labelledby="t-faq">
     <div class="wrap">
@@ -233,7 +268,7 @@
   <section id="tus-datos" aria-labelledby="t-data">
     <div class="wrap">
       <div class="sec-head center">
-        <span class="eyebrow">Privacidad y tus datos</span>
+        <span class="eyebrow">Confianza y privacidad</span>
         <h2 id="t-data">Tus datos, bajo tu control</h2>
         <p>Consulta cómo tratamos tu información y solicita la eliminación de tu cuenta cuando quieras, sin abrir la app ni iniciar sesión.</p>
       </div>
@@ -244,6 +279,11 @@
           <p>Qué datos recogemos, para qué los usamos, quién puede verlos, cómo los protegemos y cuáles son tus derechos según la Ley 1581 de 2012.</p>
           <span class="more">Leer la política <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span>
         </a>
+        <div class="data-card static">
+          <span class="ico g"><svg class="icon" aria-hidden="true"><use href="#i-lock"/></svg></span>
+          <h3>Documentos protegidos</h3>
+          <p>Los documentos se guardan de forma privada y solo los revisa personal autorizado cuando un proceso lo requiere. No se muestran a otros usuarios.</p>
+        </div>
         <a class="data-card del" href="eliminar-cuenta/">
           <span class="ico"><svg class="icon" aria-hidden="true"><use href="#i-trash"/></svg></span>
           <h3>Eliminar mi cuenta</h3>
@@ -280,6 +320,6 @@
     </nav>
   </div>
 </footer>
-<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+<script>document.getElementById('y').textContent = new Date().getFullYear();document.querySelectorAll('.mnav nav a').forEach(function(l){l.addEventListener('click',function(){l.closest('details').removeAttribute('open');});});</script>
 </body>
 </html>
