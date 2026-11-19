@@ -1,34 +1,52 @@
 <!doctype html>
-<html lang="es">
+<html lang="es" class="no-js">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Política de privacidad — Turnea</title>
   <meta name="description" content="Cómo Turnea recoge, usa, protege y elimina los datos personales de trabajadores y empresas.">
   <link rel="canonical" href="https://molanojd.github.io/turnea/privacidad/">
-  <meta name="theme-color" content="#172F4D">
+  <meta name="theme-color" content="#F7F9FC">
   <link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
   <meta property="og:title" content="Política de privacidad — Turnea">
   <meta property="og:image" content="https://molanojd.github.io/turnea/assets/og.jpg">
-  <link rel="preload" href="../assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/jakarta-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../assets/styles.css">
+  <script src="../assets/main.js" defer></script>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+  <symbol id="i-arrow-l" viewBox="0 0 24 24"><path d="M19 12H5M11 5l-7 7 7 7"/></symbol>
+</defs></svg>
 <a class="skip" href="#main">Saltar al contenido</a>
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="../"><img src="../assets/logo.svg" width="34" height="34" alt="">Turnea</a>
+    <a class="brand" href="../"><img src="../assets/logo.svg" width="36" height="36" alt="">Turnea</a>
     <nav class="nav" aria-label="Principal">
-      <a href="../#como-funciona">Cómo funciona</a>
+      <a href="../#como-funciona">Funciones</a>
       <a href="../#preguntas">Preguntas</a>
+      <a href="../privacidad/" aria-current="page">Privacidad</a>
       <a href="../eliminar-cuenta/">Eliminar cuenta</a>
     </nav>
-    <a class="btn btn-outline" href="../">Volver al inicio</a>
+    <a class="btn btn-outline" href="../"><svg class="icon" aria-hidden="true"><use href="#i-arrow-l"/></svg>Inicio</a>
+    <details class="mnav">
+      <summary aria-label="Abrir menú"><svg class="icon i-open" aria-hidden="true"><use href="#i-menu"/></svg><svg class="icon i-close" aria-hidden="true"><use href="#i-x"/></svg></summary>
+      <nav aria-label="Menú móvil">
+        <a href="../">Inicio</a>
+        <a href="../#preguntas">Preguntas frecuentes</a>
+        <a href="../privacidad/">Política de privacidad</a>
+        <a href="../eliminar-cuenta/">Eliminar cuenta</a>
+        <a href="../#contacto">Contacto</a>
+      </nav>
+    </details>
   </div>
 </header>
 
 <main id="main">
   <div class="legal-hero">
+    <div class="aurora" aria-hidden="true"><span class="a1"></span><span class="a2"></span></div>
     <div class="wrap">
       <h1>Política de privacidad</h1>
       <p>Aquí explicamos qué datos recoge Turnea, para qué los usamos, quién puede verlos, cómo los protegemos y cómo puedes consultarlos o pedir que los eliminemos.</p>
@@ -133,12 +151,27 @@
 
 <footer>
   <div class="wrap">
-    <span>© 2026 Turnea</span>
-    <nav aria-label="Legal">
-      <a href="../">Inicio</a>
-      <a href="./">Política de privacidad</a>
-      <a href="../eliminar-cuenta/">Eliminar cuenta</a>
-    </nav>
+    <div>
+      <a class="brand" href="../"><img src="../assets/logo.svg" width="36" height="36" alt="">Turnea</a>
+      <p class="about">Conectamos a trabajadores y empresas para encontrar oportunidades y organizar turnos.</p>
+    </div>
+    <div>
+      <p class="fh">Explorar</p>
+      <nav aria-label="Explorar">
+        <a href="../">Inicio</a>
+        <a href="../#como-funciona">Funciones</a>
+        <a href="../#preguntas">Preguntas frecuentes</a>
+      </nav>
+    </div>
+    <div>
+      <p class="fh">Legal y contacto</p>
+      <nav aria-label="Legal">
+        <a href="../privacidad/">Política de privacidad</a>
+        <a href="../eliminar-cuenta/">Eliminar cuenta</a>
+        <a href="mailto:appturnea@gmail.com">appturnea@gmail.com</a>
+      </nav>
+    </div>
+    <p class="copy">© <span id="y">2026</span> Turnea. Todos los derechos reservados.</p>
   </div>
 </footer>
 </body>

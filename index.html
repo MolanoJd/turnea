@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="es">
+<html lang="es" class="no-js">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Turnea — Encuentra oportunidades. Organiza tus turnos.</title>
   <meta name="description" content="Turnea conecta a trabajadores y empresas para buscar, publicar y gestionar oportunidades laborales por horas, por días, por proyecto o permanentes.">
   <link rel="canonical" href="https://molanojd.github.io/turnea/">
-  <meta name="theme-color" content="#172F4D">
+  <meta name="theme-color" content="#F7F9FC">
   <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Turnea">
@@ -18,8 +18,9 @@
   <meta property="og:image:height" content="630">
   <meta property="og:locale" content="es_CO">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/jakarta-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/main.js" defer></script>
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -31,17 +32,21 @@
     <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
     <symbol id="i-send" viewBox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4z"/><path d="M22 2 11 13"/></symbol>
     <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
-    <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 15l2 2 4-4"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></symbol>
     <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
-    <symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9M10.3 21a1.94 1.94 0 0 0 3.4 0"/></symbol>
-    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></symbol>
-    <symbol id="i-trash" viewBox="0 0 24 24"><path d="M3 6h18M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M10 11v6M14 11v6"/></symbol>
-    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></symbol>
-    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
-    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
-    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
     <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
     <symbol id="i-play" viewBox="0 0 24 24"><path d="M5 3.5v17a1 1 0 0 0 1.5.86l14.5-8.5a1 1 0 0 0 0-1.72L6.5 2.64A1 1 0 0 0 5 3.5z" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24"><path d="M3 6h18M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M10 11v6M14 11v6"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9M10.3 21a1.94 1.94 0 0 0 3.4 0"/></symbol>
+    <symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3M12 17h.01"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
   </defs>
 </svg>
 
@@ -49,19 +54,20 @@
 
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="./"><img src="assets/logo.svg" width="34" height="34" alt="">Turnea</a>
+    <a class="brand" href="./"><img src="assets/logo.svg" width="36" height="36" alt="">Turnea</a>
     <nav class="nav" aria-label="Principal">
+      <a href="#como-funciona">Funciones</a>
       <a href="#trabajadores">Trabajadores</a>
       <a href="#empresas">Empresas</a>
       <a href="#preguntas">Preguntas</a>
       <a href="privacidad/">Privacidad</a>
       <a href="eliminar-cuenta/">Eliminar cuenta</a>
     </nav>
-    <a class="btn btn-primary top-cta" href="#contacto">Contacto</a>
+    <a class="btn btn-grad" href="#contacto">Avísame</a>
     <details class="mnav">
       <summary aria-label="Abrir menú"><svg class="icon i-open" aria-hidden="true"><use href="#i-menu"/></svg><svg class="icon i-close" aria-hidden="true"><use href="#i-x"/></svg></summary>
       <nav aria-label="Menú móvil">
-        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#como-funciona">Funciones</a>
         <a href="#trabajadores">Para trabajadores</a>
         <a href="#empresas">Para empresas</a>
         <a href="#preguntas">Preguntas frecuentes</a>
@@ -74,12 +80,13 @@
 </header>
 
 <main id="main">
-  <!-- Inicio -->
+  <!-- ============ Hero ============ -->
   <section class="hero" id="inicio" aria-labelledby="t-hero">
+    <div class="aurora" aria-hidden="true"><span class="a1"></span><span class="a2"></span><span class="a3"></span></div>
     <div class="wrap">
-      <div>
-        <span class="eyebrow">Trabajo por turnos y más</span>
-        <h1 id="t-hero">Encuentra oportunidades. <span>Organiza tus turnos.</span></h1>
+      <div class="intro">
+        <a class="pill-soon" href="#contacto"><span class="tagnew"><span class="pulse"></span>Próximamente</span>Muy pronto en Google Play</a>
+        <h1 id="t-hero">Encuentra oportunidades. <span class="l2 grad-text">Organiza tus turnos.</span></h1>
         <p class="lead">Turnea conecta a trabajadores y empresas para facilitar la búsqueda, publicación y gestión de oportunidades laborales. Crea tu perfil, revisa ofertas disponibles y mantén la comunicación desde un solo lugar.</p>
         <div class="audience" role="group" aria-label="¿Qué buscas?">
           <a class="aud worker" href="#trabajadores">
@@ -93,199 +100,213 @@
             <svg class="icon aud-arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
           </a>
         </div>
-        <div class="cta" id="descargar">
-          <a class="play-soon" href="#avisame">
+        <div class="hero-foot">
+          <a class="play" href="#contacto">
             <svg class="icon" aria-hidden="true"><use href="#i-play"/></svg>
             <span><small>Próximamente en</small><strong>Google Play</strong></span>
           </a>
-          <p class="note-soon">La app estará disponible muy pronto para Android.</p>
+          <p>Disponible muy pronto para Android. Te avisamos cuando salga.</p>
         </div>
       </div>
 
-      <div class="mock" aria-hidden="true">
-        <div class="phone">
-          <div class="screen">
-            <div class="s-top">
-              <small>Hola, bienvenido</small>
-              <b>Oportunidades para ti</b>
-              <div class="s-search"><svg class="icon" aria-hidden="true"><use href="#i-search"/></svg>Buscar por cargo o ubicación</div>
-            </div>
-            <div class="s-chips"><span class="on">Por horas</span><span>Por días</span><span>Por proyecto</span><span>Permanente</span></div>
-            <div class="s-card">
-              <div class="r"><div><b>Auxiliar de eventos</b><p>Turno de 6 horas · Sábado</p></div><span class="pill p">Por horas</span></div>
-              <div class="act">Postularme</div>
-            </div>
-            <div class="s-card">
-              <div class="r"><div><b>Apoyo en bodega</b><p>3 días · Jornada diurna</p></div><span class="pill b">Varios días</span></div>
-            </div>
-            <div class="s-card">
-              <div class="r"><div><b>Tu postulación</b><p>Auxiliar de eventos</p></div><span class="pill g">Invitación</span></div>
+      <div class="mock mock-in" aria-hidden="true">
+        <span class="glow"></span><span class="ring"></span><span class="ring r2"></span>
+        <div class="tilt">
+          <div class="phone">
+            <div class="screen">
+              <div class="s-top">
+                <small>Hola, bienvenido</small>
+                <b>Oportunidades para ti</b>
+                <div class="s-search"><svg class="icon"><use href="#i-search"/></svg>Buscar por cargo o ubicación</div>
+              </div>
+              <div class="s-chips"><span class="on">Por horas</span><span>Por días</span><span>Proyecto</span><span>Permanente</span></div>
+              <div class="feed">
+                <div class="s-card">
+                  <div class="r"><div class="who"><span class="lg c1">EV</span><div><b>Auxiliar de eventos</b><p>6 horas · Sábado</p></div></div><span class="pill p">Horas</span></div>
+                  <div class="act">Postularme</div>
+                </div>
+                <div class="s-card">
+                  <div class="r"><div class="who"><span class="lg c2">BO</span><div><b>Apoyo en bodega</b><p>3 días · Diurno</p></div></div><span class="pill b">Días</span></div>
+                </div>
+                <div class="s-card">
+                  <div class="r"><div class="who"><span class="lg c3">AT</span><div><b>Atención al cliente</b><p>Permanente</p></div></div><span class="pill g">Nueva</span></div>
+                </div>
+              </div>
+              <div class="s-nav"><i class="on"></i><i></i><i></i><i></i></div>
             </div>
           </div>
         </div>
-        <div class="toast">
-          <span class="dot"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
-          <div><b>Nueva invitación</b><span>Una empresa te invitó a un turno</span></div>
-        </div>
+        <div class="chip c1"><span class="dot"><svg class="icon"><use href="#i-check"/></svg></span><div><b>Nueva invitación</b><span>Una empresa te invitó a un turno</span></div></div>
+        <div class="chip c2"><span class="dot"><svg class="icon"><use href="#i-send"/></svg></span><div><b>Postulación enviada</b><span>Auxiliar de eventos</span></div></div>
+        <div class="chip c3"><span class="dot"><svg class="icon"><use href="#i-chat"/></svg></span><div><b>Nuevo mensaje</b><span>¿Puedes el sábado a las 8?</span></div></div>
       </div>
     </div>
   </section>
 
-  <div class="modes" aria-label="Modalidades de trabajo">
-    <div class="wrap">
-      <p>Oportunidades en distintas modalidades:</p>
-      <ul>
-        <li>Por horas</li><li>Por días</li><li>Por varios días</li><li>Por proyecto</li><li>Permanentes</li>
-      </ul>
+  <!-- ============ Modalidades ============ -->
+  <div class="marquee" role="region" aria-label="Modalidades de trabajo">
+    <div class="track">
+      <ul><li>Por horas</li><li>Por días</li><li>Por varios días</li><li>Por proyecto</li><li>Permanentes</li><li><em>Trabajadores y empresas</em></li><li>Postulaciones</li><li>Invitaciones</li><li>Chat y avisos</li></ul>
+      <ul aria-hidden="true"><li>Por horas</li><li>Por días</li><li>Por varios días</li><li>Por proyecto</li><li>Permanentes</li><li><em>Trabajadores y empresas</em></li><li>Postulaciones</li><li>Invitaciones</li><li>Chat y avisos</li></ul>
     </div>
   </div>
 
-  <!-- Cómo funciona / funciones -->
+  <!-- ============ Funciones (bento) ============ -->
   <section id="como-funciona" aria-labelledby="t-func">
     <div class="wrap">
-      <div class="sec-head center">
-        <span class="eyebrow">Cómo funciona</span>
-        <h2 id="t-func">Todo el proceso, en una sola app</h2>
+      <div class="sec-head center reveal">
+        <span class="kicker"><svg class="icon" aria-hidden="true"><use href="#i-sparkle"/></svg>Funciones</span>
+        <h2 id="t-func">Todo el proceso, <span class="grad-text">en una sola app</span></h2>
         <p>Desde la publicación de una oportunidad hasta la postulación, las invitaciones y la comunicación entre las partes.</p>
       </div>
-      <ul class="features">
-        <li class="feature"><span class="ico"><svg class="icon" aria-hidden="true"><use href="#i-user"/></svg></span><h3>Perfiles para trabajadores y empresas</h3><p>Cada tipo de usuario tiene su propio perfil, adaptado a lo que necesita.</p></li>
-        <li class="feature"><span class="ico"><svg class="icon" aria-hidden="true"><use href="#i-search"/></svg></span><h3>Publica y busca oportunidades</h3><p>Las empresas publican vacantes y los trabajadores las exploran desde la app.</p></li>
-        <li class="feature"><span class="ico"><svg class="icon" aria-hidden="true"><use href="#i-filter"/></svg></span><h3>Filtros útiles</h3><p>Filtra por ubicación, modalidad y otros datos de la oferta.</p></li>
-        <li class="feature"><span class="ico p"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg></span><h3>Experiencia y disponibilidad</h3><p>Registra tu experiencia, tus habilidades y los días en que puedes trabajar.</p></li>
-        <li class="feature"><span class="ico p"><svg class="icon" aria-hidden="true"><use href="#i-send"/></svg></span><h3>Postulaciones e invitaciones</h3><p>Postúlate, recibe invitaciones y haz seguimiento a tus asignaciones.</p></li>
-        <li class="feature"><span class="ico"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg></span><h3>Chat y avisos</h3><p>Comunícate y recibe avisos sobre la actividad relacionada contigo.</p></li>
-        <li class="feature"><span class="ico g"><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg></span><h3>Sedes, documentos y revisión</h3><p>Gestión de sedes, documentos y procesos de revisión cuando correspondan.</p></li>
+
+      <ul class="bento">
+        <li class="bx w4 reveal" style="--i:0">
+          <span class="b-ico"><svg class="icon" aria-hidden="true"><use href="#i-user"/></svg></span>
+          <h3>Perfiles para trabajadores y empresas</h3>
+          <p>Cada tipo de usuario tiene su propio perfil, adaptado a lo que necesita.</p>
+          <div class="b-ui mini-profile" aria-hidden="true">
+            <div class="mp"><span class="av">TR</span><div><b>Perfil de trabajador</b><span>Experiencia · habilidades · disponibilidad</span></div></div>
+            <div class="mp"><span class="av sq">EM</span><div><b>Perfil de empresa</b><span>Organización · sedes · oportunidades</span></div></div>
+          </div>
+        </li>
+        <li class="bx w2 reveal" style="--i:1">
+          <span class="b-ico bl"><svg class="icon" aria-hidden="true"><use href="#i-filter"/></svg></span>
+          <h3>Filtros útiles</h3>
+          <p>Busca por ubicación, modalidad y otros datos de la oferta.</p>
+          <div class="b-ui chips" aria-hidden="true"><span class="on-b">Cerca de mí</span><span class="on">Por horas</span><span>Fin de semana</span></div>
+        </li>
+        <li class="bx w2 reveal" style="--i:2">
+          <span class="b-ico pu"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg></span>
+          <h3>Experiencia y disponibilidad</h3>
+          <p>Registra tu experiencia, tus habilidades y los días en que puedes trabajar.</p>
+          <div class="b-ui week" aria-hidden="true">
+            <span>L<i class="on"></i></span><span>M<i></i></span><span>M<i class="on"></i></span><span>J<i></i></span><span>V<i class="on"></i></span><span>S<i class="on"></i></span><span>D<i></i></span>
+          </div>
+        </li>
+        <li class="bx w4 reveal" style="--i:3">
+          <span class="b-ico"><svg class="icon" aria-hidden="true"><use href="#i-send"/></svg></span>
+          <h3>Postulaciones, invitaciones y asignaciones</h3>
+          <p>Publica y busca oportunidades, postúlate o invita a candidatos, y haz seguimiento a cada asignación.</p>
+          <div class="b-ui pipeline" aria-hidden="true">
+            <span><i style="background:#2459A6"></i>Publicada</span><svg class="icon arrow"><use href="#i-arrow"/></svg>
+            <span><i style="background:#6746A3"></i>Postulación</span><svg class="icon arrow"><use href="#i-arrow"/></svg>
+            <span><i style="background:#B07ADB"></i>Invitación</span><svg class="icon arrow"><use href="#i-arrow"/></svg>
+            <span><i style="background:#138A5B"></i>Asignado</span>
+          </div>
+        </li>
+        <li class="bx w3 reveal" style="--i:4">
+          <span class="b-ico bl"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg></span>
+          <h3>Chat y avisos</h3>
+          <p>Comunícate y recibe avisos sobre la actividad relacionada contigo.</p>
+          <div class="b-ui chat" aria-hidden="true">
+            <div class="bub in">Hola, ¿tienes disponibilidad el sábado?</div>
+            <div class="bub out">¡Sí! Puedo desde las 8:00.</div>
+          </div>
+        </li>
+        <li class="bx w3 reveal" style="--i:5">
+          <span class="b-ico g"><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg></span>
+          <h3>Sedes, documentos y revisión</h3>
+          <p>Gestión de sedes, documentos y procesos de revisión cuando correspondan.</p>
+          <div class="b-ui docs" aria-hidden="true">
+            <div class="doc-row"><svg class="icon"><use href="#i-pin"/></svg>Sede principal<span class="pill b">Activa</span></div>
+            <div class="doc-row"><svg class="icon"><use href="#i-file"/></svg>Documento cargado<span class="pill g">Revisado</span></div>
+          </div>
+        </li>
       </ul>
     </div>
   </section>
 
-  <!-- Trabajadores -->
-  <section class="alt" id="trabajadores" aria-labelledby="t-work">
-    <div class="wrap split">
-      <div>
-        <span class="tag worker">Para trabajadores</span>
-        <h2 id="t-work">Muestra lo que sabes hacer y cuándo puedes trabajar</h2>
-        <p>Crea tu perfil, indica tu experiencia y disponibilidad, explora oportunidades y postúlate en pocos pasos.</p>
-        <ol class="steps">
-          <li><div><b>Crea tu perfil</b><span>Agrega tus datos, tu experiencia y tus habilidades.</span></div></li>
-          <li><div><b>Indica tu disponibilidad</b><span>Cuéntales a las empresas qué días y horarios tienes libres.</span></div></li>
-          <li><div><b>Explora y filtra oportunidades</b><span>Busca por ubicación y modalidad: por horas, días, proyecto o permanentes.</span></div></li>
-          <li><div><b>Postúlate y haz seguimiento</b><span>Recibe invitaciones, conversa por chat y revisa tus asignaciones.</span></div></li>
-        </ol>
-      </div>
-      <div class="split-media" aria-hidden="true">
-        <div class="profile"><span class="avatar">TR</span><div><h3>Tu perfil</h3><small>Trabajador</small></div></div>
-        <div class="kv">
-          <div><span>Experiencia</span><b>Logística · Eventos</b></div>
-          <div><span>Habilidades</span><b>Atención al cliente</b></div>
-          <div><span>Modalidad</span><b>Por horas · Por días</b></div>
-        </div>
-        <div class="week">
-          <span>L<i class="on"></i></span><span>M<i></i></span><span>M<i class="on"></i></span><span>J<i></i></span><span>V<i class="on"></i></span><span>S<i class="on"></i></span><span>D<i></i></span>
+  <!-- ============ Para trabajadores / empresas ============ -->
+  <section class="aud-sec" id="trabajadores" aria-labelledby="t-aud">
+    <span id="empresas" style="position:absolute;top:0;scroll-margin-top:72px" aria-hidden="true"></span>
+    <div class="wrap">
+      <div class="sec-head center reveal">
+        <span class="kicker"><svg class="icon" aria-hidden="true"><use href="#i-sparkle"/></svg>Para quién es</span>
+        <h2 id="t-aud">Hecha para <span class="grad-text">las dos partes</span></h2>
+        <div class="seg" role="tablist" aria-label="Elige tu perfil" data-active="trabajadores">
+          <span class="thumb" aria-hidden="true"></span>
+          <button role="tab" id="tab-w" data-key="trabajadores" aria-controls="panel-w" aria-selected="true"><svg class="icon" aria-hidden="true"><use href="#i-user"/></svg>Trabajadores</button>
+          <button role="tab" id="tab-c" data-key="empresas" aria-controls="panel-c" aria-selected="false" tabindex="-1"><svg class="icon" aria-hidden="true"><use href="#i-building"/></svg>Empresas</button>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- Empresas -->
-  <section class="company" id="empresas" aria-labelledby="t-comp">
-    <div class="wrap split reverse">
-      <div>
-        <span class="tag company">Para empresas</span>
-        <h2 id="t-comp">Encuentra y organiza a tu personal</h2>
-        <p>Registra tu organización y tus sedes, publica oportunidades y gestiona a los candidatos sin salir de la app.</p>
-        <ol class="steps">
-          <li><div><b>Registra tu empresa y sus sedes</b><span>Configura tu organización y los lugares donde necesitas personal.</span></div></li>
-          <li><div><b>Publica oportunidades</b><span>Define la modalidad, la ubicación y los detalles de cada vacante.</span></div></li>
-          <li><div><b>Revisa postulaciones</b><span>Consulta los perfiles de quienes se postulan a tus oportunidades.</span></div></li>
-          <li><div><b>Invita y asigna personal</b><span>Envía invitaciones, gestiona asignaciones y comunícate por chat.</span></div></li>
-        </ol>
+      <div class="panel worker" id="panel-w" role="tabpanel" aria-labelledby="tab-w">
+        <div>
+          <h3>Muestra lo que sabes hacer y cuándo puedes trabajar</h3>
+          <p>Crea tu perfil, indica tu experiencia y disponibilidad, explora oportunidades y postúlate en pocos pasos.</p>
+          <ol class="steps">
+            <li><span class="n">1</span><div><b>Crea tu perfil</b><span>Agrega tus datos, tu experiencia y tus habilidades.</span></div></li>
+            <li><span class="n">2</span><div><b>Indica tu disponibilidad</b><span>Cuéntales a las empresas qué días y horarios tienes libres.</span></div></li>
+            <li><span class="n">3</span><div><b>Explora y filtra oportunidades</b><span>Busca por ubicación y modalidad: por horas, días, proyecto o permanentes.</span></div></li>
+            <li><span class="n">4</span><div><b>Postúlate y haz seguimiento</b><span>Recibe invitaciones, conversa por chat y revisa tus asignaciones.</span></div></li>
+          </ol>
+        </div>
+        <div class="visual" aria-hidden="true">
+          <div class="vcard">
+            <div class="vhead"><span class="av">TR</span><div><b>Tu perfil</b><small>Trabajador</small></div><span class="pill g">Disponible</span></div>
+            <div class="kv">
+              <div><span>Experiencia</span><b>Logística · Eventos</b></div>
+              <div><span>Habilidades</span><b>Atención al cliente</b></div>
+              <div><span>Modalidad</span><b>Por horas · Por días</b></div>
+            </div>
+          </div>
+          <div class="vcard">
+            <div class="vhead"><span class="lg c1">EV</span><div><b>Invitación a un turno</b><small>Auxiliar de eventos · Sábado</small></div><span class="pill p">Nueva</span></div>
+          </div>
+        </div>
       </div>
-      <div class="split-media" aria-hidden="true">
-        <div class="profile"><span class="avatar c">EM</span><div><h3>Tu empresa</h3><small>2 sedes registradas</small></div></div>
-        <div class="kv" style="margin-top:14px">
-          <div class="bar-row" style="background:none;padding:12px 0;border-radius:0"><span>Oportunidad publicada</span><span class="pill b">Por días</span></div>
-          <div class="bar-row" style="background:none;padding:12px 0;border-radius:0"><span>Postulaciones recibidas</span><span class="pill p">Nuevas</span></div>
-          <div class="bar-row" style="background:none;padding:12px 0;border-radius:0"><span>Personal asignado</span><span class="pill g">Confirmado</span></div>
+
+      <div class="panel company" id="panel-c" role="tabpanel" aria-labelledby="tab-c" hidden>
+        <div>
+          <h3>Encuentra y organiza a tu personal</h3>
+          <p>Registra tu organización y tus sedes, publica oportunidades y gestiona a los candidatos sin salir de la app.</p>
+          <ol class="steps">
+            <li><span class="n">1</span><div><b>Registra tu empresa y sus sedes</b><span>Configura tu organización y los lugares donde necesitas personal.</span></div></li>
+            <li><span class="n">2</span><div><b>Publica oportunidades</b><span>Define la modalidad, la ubicación y los detalles de cada vacante.</span></div></li>
+            <li><span class="n">3</span><div><b>Revisa postulaciones</b><span>Consulta los perfiles de quienes se postulan a tus oportunidades.</span></div></li>
+            <li><span class="n">4</span><div><b>Invita y asigna personal</b><span>Envía invitaciones, gestiona asignaciones y comunícate por chat.</span></div></li>
+          </ol>
+        </div>
+        <div class="visual" aria-hidden="true">
+          <div class="vcard">
+            <div class="vhead"><span class="av sq">EM</span><div><b>Tu empresa</b><small>2 sedes registradas</small></div><span class="pill b">Verificada</span></div>
+            <div class="kv">
+              <div><span>Oportunidad publicada</span><span class="pill b">Por días</span></div>
+              <div><span>Postulaciones recibidas</span><span class="pill p">Nuevas</span></div>
+              <div><span>Personal asignado</span><span class="pill g">Confirmado</span></div>
+            </div>
+          </div>
+          <div class="vcard">
+            <div class="vhead"><span class="lg c2">BO</span><div><b>Apoyo en bodega</b><small>3 días · Jornada diurna</small></div><span class="pill p">Publicada</span></div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Aviso de lanzamiento -->
-  <section class="launch" id="avisame" aria-labelledby="t-launch">
+  <!-- ============ Confianza y privacidad ============ -->
+  <section class="trust" id="tus-datos" aria-labelledby="t-data">
     <div class="wrap">
-      <div>
-        <h2 id="t-launch">Turnea llega pronto a Google Play</h2>
-        <p>Escríbenos y te avisamos apenas puedas descargarla, seas trabajador o empresa.</p>
-      </div>
-      <a class="btn btn-white" href="mailto:appturnea@gmail.com?subject=Quiero%20saber%20cu%C3%A1ndo%20sale%20Turnea"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>Avísame cuando salga</a>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="alt" id="preguntas" aria-labelledby="t-faq">
-    <div class="wrap">
-      <div class="sec-head center">
-        <span class="eyebrow">Preguntas frecuentes</span>
-        <h2 id="t-faq">Resolvemos tus dudas</h2>
-      </div>
-      <div class="faq">
-        <details>
-          <summary>¿Qué es Turnea?</summary>
-          <p>Es una aplicación que conecta a personas que buscan oportunidades de trabajo con empresas que necesitan encontrar y organizar personal. Permite publicar y explorar vacantes y gestionar la postulación, las invitaciones y la comunicación.</p>
-        </details>
-        <details>
-          <summary>¿Qué tipos de oportunidades hay?</summary>
-          <p>Oportunidades por horas, por días, por varios días, por proyecto o permanentes.</p>
-        </details>
-        <details>
-          <summary>¿Cómo me postulo a una oportunidad?</summary>
-          <p>Crea tu perfil de trabajador, indica tu experiencia y disponibilidad, busca la oportunidad que te interese y postúlate desde la app. Podrás seguir el estado de tus postulaciones e invitaciones.</p>
-        </details>
-        <details>
-          <summary>¿Cómo publica una empresa sus oportunidades?</summary>
-          <p>La empresa registra su organización y sus sedes, publica la oportunidad con su modalidad y ubicación y luego revisa las postulaciones, envía invitaciones y gestiona las asignaciones.</p>
-        </details>
-        <details>
-          <summary>¿Turnea hace pagos o transferencias?</summary>
-          <p>No. Por ahora Turnea no realiza pagos, transferencias ni retiros de dinero.</p>
-        </details>
-        <details>
-          <summary>¿Cuándo estará disponible la app?</summary>
-          <p>Turnea llegará pronto a Google Play. Si quieres saber cuándo, escríbenos y te avisamos.</p>
-        </details>
-        <details>
-          <summary>¿Cómo elimino mi cuenta y mis datos?</summary>
-          <p>Puedes solicitarlo en cualquier momento desde la página <a href="eliminar-cuenta/">Eliminar cuenta</a>, sin necesidad de abrir la app ni iniciar sesión.</p>
-        </details>
-      </div>
-    </div>
-  </section>
-
-  <!-- Privacidad y datos -->
-  <section id="tus-datos" aria-labelledby="t-data">
-    <div class="wrap">
-      <div class="sec-head center">
-        <span class="eyebrow">Confianza y privacidad</span>
+      <div class="sec-head center reveal">
+        <span class="kicker"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg>Confianza y privacidad</span>
         <h2 id="t-data">Tus datos, bajo tu control</h2>
         <p>Consulta cómo tratamos tu información y solicita la eliminación de tu cuenta cuando quieras, sin abrir la app ni iniciar sesión.</p>
       </div>
-      <div class="data-cards">
-        <a class="data-card" href="privacidad/">
-          <span class="ico"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg></span>
+      <div class="tcards">
+        <a class="tcard bl reveal" style="--i:0" href="privacidad/">
+          <span class="t-ico"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg></span>
           <h3>Política de privacidad</h3>
           <p>Qué datos recogemos, para qué los usamos, quién puede verlos, cómo los protegemos y cuáles son tus derechos según la Ley 1581 de 2012.</p>
           <span class="more">Leer la política <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span>
         </a>
-        <div class="data-card static">
-          <span class="ico g"><svg class="icon" aria-hidden="true"><use href="#i-lock"/></svg></span>
+        <div class="tcard g reveal" style="--i:1">
+          <span class="t-ico"><svg class="icon" aria-hidden="true"><use href="#i-lock"/></svg></span>
           <h3>Documentos protegidos</h3>
           <p>Los documentos se guardan de forma privada y solo los revisa personal autorizado cuando un proceso lo requiere. No se muestran a otros usuarios.</p>
         </div>
-        <a class="data-card del" href="eliminar-cuenta/">
-          <span class="ico"><svg class="icon" aria-hidden="true"><use href="#i-trash"/></svg></span>
+        <a class="tcard reveal" style="--i:2" href="eliminar-cuenta/">
+          <span class="t-ico"><svg class="icon" aria-hidden="true"><use href="#i-trash"/></svg></span>
           <h3>Eliminar mi cuenta</h3>
           <p>Solicita que eliminemos tu cuenta y tus datos personales, o solo algunos datos como fotos o documentos.</p>
           <span class="more">Solicitar eliminación <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span>
@@ -294,17 +315,39 @@
     </div>
   </section>
 
-  <!-- Contacto -->
-  <section class="contact" id="contacto" aria-labelledby="t-contact">
+  <!-- ============ FAQ ============ -->
+  <section id="preguntas" aria-labelledby="t-faq">
     <div class="wrap">
-      <div class="sec-head center">
-        <span class="eyebrow">Contacto</span>
-        <h2 id="t-contact">¿Tienes preguntas? Escríbenos</h2>
-        <p>Respondemos dudas de trabajadores y empresas, y te avisamos cuando la app esté disponible.</p>
+      <div class="sec-head center reveal">
+        <span class="kicker"><svg class="icon" aria-hidden="true"><use href="#i-help"/></svg>Preguntas frecuentes</span>
+        <h2 id="t-faq">Resolvemos tus dudas</h2>
       </div>
-      <div class="mails">
-        <a href="mailto:appturnea@gmail.com"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>appturnea@gmail.com</a>
-        <a href="mailto:cristianiles14@gmail.com"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>cristianiles14@gmail.com</a>
+      <div class="faq">
+        <div class="qa reveal" style="--i:0"><h3><button type="button" aria-expanded="false" aria-controls="a1">¿Qué es Turnea?<span class="pm" aria-hidden="true"></span></button></h3><div class="ans" id="a1"><div><p>Es una aplicación que conecta a personas que buscan oportunidades de trabajo con empresas que necesitan encontrar y organizar personal. Permite publicar y explorar vacantes y gestionar la postulación, las invitaciones y la comunicación.</p></div></div></div>
+        <div class="qa reveal" style="--i:1"><h3><button type="button" aria-expanded="false" aria-controls="a2">¿Qué tipos de oportunidades hay?<span class="pm" aria-hidden="true"></span></button></h3><div class="ans" id="a2"><div><p>Oportunidades por horas, por días, por varios días, por proyecto o permanentes.</p></div></div></div>
+        <div class="qa reveal" style="--i:2"><h3><button type="button" aria-expanded="false" aria-controls="a3">¿Cómo me postulo a una oportunidad?<span class="pm" aria-hidden="true"></span></button></h3><div class="ans" id="a3"><div><p>Crea tu perfil de trabajador, indica tu experiencia y disponibilidad, busca la oportunidad que te interese y postúlate desde la app. Podrás seguir el estado de tus postulaciones e invitaciones.</p></div></div></div>
+        <div class="qa reveal" style="--i:3"><h3><button type="button" aria-expanded="false" aria-controls="a4">¿Cómo publica una empresa sus oportunidades?<span class="pm" aria-hidden="true"></span></button></h3><div class="ans" id="a4"><div><p>La empresa registra su organización y sus sedes, publica la oportunidad con su modalidad y ubicación y luego revisa las postulaciones, envía invitaciones y gestiona las asignaciones.</p></div></div></div>
+        <div class="qa reveal" style="--i:4"><h3><button type="button" aria-expanded="false" aria-controls="a5">¿Turnea hace pagos o transferencias?<span class="pm" aria-hidden="true"></span></button></h3><div class="ans" id="a5"><div><p>No. Por ahora Turnea no realiza pagos, transferencias ni retiros de dinero.</p></div></div></div>
+        <div class="qa reveal" style="--i:5"><h3><button type="button" aria-expanded="false" aria-controls="a6">¿Cuándo estará disponible la app?<span class="pm" aria-hidden="true"></span></button></h3><div class="ans" id="a6"><div><p>Turnea llegará pronto a Google Play. Si quieres saber cuándo, escríbenos y te avisamos.</p></div></div></div>
+        <div class="qa reveal" style="--i:6"><h3><button type="button" aria-expanded="false" aria-controls="a7">¿Cómo elimino mi cuenta y mis datos?<span class="pm" aria-hidden="true"></span></button></h3><div class="ans" id="a7"><div><p>Puedes solicitarlo en cualquier momento desde la página <a href="eliminar-cuenta/">Eliminar cuenta</a>, sin necesidad de abrir la app ni iniciar sesión.</p></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA final / contacto ============ -->
+  <section class="final" id="contacto" aria-labelledby="t-cta">
+    <div class="wrap">
+      <div class="cta-card reveal">
+        <h2 id="t-cta">Turnea llega pronto a Google Play</h2>
+        <p>Escríbenos y te avisamos apenas puedas descargarla. También respondemos dudas de trabajadores y empresas.</p>
+        <div class="row">
+          <a class="btn btn-white" href="mailto:appturnea@gmail.com?subject=Quiero%20saber%20cu%C3%A1ndo%20sale%20Turnea"><svg class="icon" aria-hidden="true"><use href="#i-bell"/></svg>Avísame cuando salga</a>
+          <a class="btn btn-glass" href="mailto:appturnea@gmail.com"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>Escríbenos</a>
+        </div>
+        <div class="mails">
+          <a href="mailto:appturnea@gmail.com"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>appturnea@gmail.com</a>
+          <a href="mailto:cristianiles14@gmail.com"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>cristianiles14@gmail.com</a>
+        </div>
       </div>
     </div>
   </section>
@@ -312,14 +355,29 @@
 
 <footer>
   <div class="wrap">
-    <span>© <span id="y">2026</span> Turnea</span>
-    <nav aria-label="Legal">
-      <a href="privacidad/">Política de privacidad</a>
-      <a href="eliminar-cuenta/">Eliminar cuenta</a>
-      <a href="mailto:appturnea@gmail.com">appturnea@gmail.com</a>
-    </nav>
+    <div>
+      <a class="brand" href="./"><img src="assets/logo.svg" width="36" height="36" alt="">Turnea</a>
+      <p class="about">Conectamos a trabajadores y empresas para encontrar oportunidades y organizar turnos.</p>
+    </div>
+    <div>
+      <p class="fh">Explorar</p>
+      <nav aria-label="Explorar">
+        <a href="#como-funciona">Funciones</a>
+        <a href="#trabajadores">Para trabajadores</a>
+        <a href="#empresas">Para empresas</a>
+        <a href="#preguntas">Preguntas frecuentes</a>
+      </nav>
+    </div>
+    <div>
+      <p class="fh">Legal y contacto</p>
+      <nav aria-label="Legal">
+        <a href="privacidad/">Política de privacidad</a>
+        <a href="eliminar-cuenta/">Eliminar cuenta</a>
+        <a href="mailto:appturnea@gmail.com">appturnea@gmail.com</a>
+      </nav>
+    </div>
+    <p class="copy">© <span id="y">2026</span> Turnea. Todos los derechos reservados.</p>
   </div>
 </footer>
-<script>document.getElementById('y').textContent = new Date().getFullYear();document.querySelectorAll('.mnav nav a').forEach(function(l){l.addEventListener('click',function(){l.closest('details').removeAttribute('open');});});</script>
 </body>
 </html>
