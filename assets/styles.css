@@ -219,3 +219,17 @@ footer a:hover { color: #fff; text-decoration: underline; }
 .radios label { display: flex; gap: 10px; align-items: flex-start; padding: 12px 14px; border: 1px solid var(--line); border-radius: 12px; font-weight: 500; cursor: pointer; margin: 0; }
 .radios input { width: 18px; height: 18px; min-height: 0; margin-top: 3px; accent-color: var(--purple); }
 .fallback { margin-top: 14px; font-size: .9rem; color: var(--muted); }
+
+/* Data & privacy cards */
+.data-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; max-width: 920px; margin: 0 auto; }
+.data-card { display: flex; flex-direction: column; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 28px; text-decoration: none; color: var(--text); box-shadow: var(--shadow); transition: border-color .2s, transform .2s; }
+.data-card:hover { border-color: var(--blue); color: var(--text); transform: translateY(-2px); }
+.data-card .ico { width: 50px; height: 50px; border-radius: 14px; display: grid; place-items: center; background: var(--blue-soft); color: var(--blue); }
+.data-card.del .ico { background: var(--purple-soft); color: var(--purple); }
+.data-card h3 { margin-top: 18px; font-size: 1.2rem; }
+.data-card p { margin-top: 8px; color: var(--muted); flex: 1; }
+.data-card .more { margin-top: 18px; display: inline-flex; align-items: center; gap: 8px; font-weight: 700; color: var(--blue); }
+.data-card.del .more { color: var(--purple); }
+.data-card .more .icon { width: 18px; height: 18px; }
+@media (max-width: 700px) { .data-cards { grid-template-columns: 1fr; } }
+@media (max-width: 1100px) and (min-width: 861px) { .nav a { padding: 8px 8px; font-size: .88rem; } }
